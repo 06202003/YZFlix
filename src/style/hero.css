@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.utama {
+  height: 100vh;
+  width: 100%;
+}
+.besar {
+  width: 100%;
+}
+.tengah {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.judul_besar {
+  font-size: 15rem;
+}
+.subjudul {
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.arrows {
+  width: 80px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+  top: 100%;
+  font-size: bold;
+}
+
+.arrows path {
+  stroke: #2994d1;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .judul_besar {
+    font-size: 3rem;
+  }
+  .subjudul {
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+}

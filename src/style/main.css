@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.App {
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Movie-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Movie-search {
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 40px;
+  padding: 10px;
+  font-weight: bolder;
+  width: 500px;
+}
+.Movie-title {
+  padding: 10px;
+  font-size: 1.5rem;
+  height: 100px;
+  text-align: center;
+}
+.Movie-date {
+  font-size: 0.75rem;
+
+  text-align: center;
+  padding-bottom: 10px;
+}
+.Movie-rate {
+  font-size: 1.25rem;
+
+  text-align: center;
+}
+.Movie-image {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+}
+.space {
+  height: 60px;
+  visibility: hidden;
+}
+
+.waw {
+  width: 100vw;
+  background-image: url('../assets/cinemabg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #011522;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .Movie-search {
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-weight: bolder;
+    width: 300px;
+  }
+}
